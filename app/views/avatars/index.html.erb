@@ -1,2 +1,4 @@
-<h1>Avatars#index</h1>
-<p>Find me in app/views/avatars/index.html.erb</p>
+<h1>Mostrando todos los avatars</h1>
+<% @avatars.each do |avatar| %>
+  <%= image_tag avatar.url_image %>
+<% end %>
